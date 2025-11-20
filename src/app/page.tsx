@@ -63,3 +63,13 @@ export default function Home() {
     </div>
   );
 }
+
+// export default function Home() {
+//   return (
+//     <main className="min-h-screen bg-slate-950 text-pink-300 flex items-center justify-center">
+//       <h1 className="text-4xl md:text-5xl font-semibold">
+//         Hello, DewDrop 💧
+//       </h1>
+//     </main>
+//   );
+// }

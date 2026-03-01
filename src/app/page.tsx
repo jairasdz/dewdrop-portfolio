@@ -64,12 +64,22 @@
 //   );
 // }
 
+import Hero from "./components/Hero"
+
+// export default function Home() {
+//   return (
+//     <main className="min-h-screen bg-slate-600 text-pink-300 flex items-center justify-center">
+//       <h1 className="font-sans text-4xl md:text-5xl font-bold"> 
+//         Welcome to DewDrop Studios 💧
+//       </h1>
+//     </main>
+//   );
+// }
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-600 text-pink-300 flex items-center justify-center">
-      <h1 className="font-sans text-4xl md:text-5xl font-bold"> 
-        Welcome to DewDrop Studios 💧
-      </h1>
+    <main className="min-h-screen bg-pink-300">
+      <Hero />
     </main>
   );
 }

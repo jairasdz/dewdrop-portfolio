@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+export const metadata: Metadata = { // sets the title in browser tab
   title: "DewDrop Studio",
   description: "Pole dance performances and portfolio",
 };
@@ -25,7 +25,7 @@ export default function RootLayout({ children}: Readonly < { children: React.Rea
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavBar />
-        {children}
+        {children} {/* everything below the NavBar changes per page */}
       </body>
     </html>
   );

@@ -66,9 +66,9 @@
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-pink-300 flex items-center justify-center">
-      <h1 className="text-4xl md:text-5xl font-semibold">
-        Hello, DewDrop 💧
+    <main className="min-h-screen bg-slate-600 text-pink-300 flex items-center justify-center">
+      <h1 className="font-sans text-4xl md:text-5xl font-bold"> 
+        Welcome to DewDrop Studios 💧
       </h1>
     </main>
   );

@@ -3,12 +3,13 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/Navbar";
 
-const geistSans = Geist({
+//FONTS
+const geistSans = Geist({ //used for headings and paragraph text, smooth + readable
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
+const geistMono = Geist_Mono({ //used in special boxes or stylistic accents - fixed width, "techy" look
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });

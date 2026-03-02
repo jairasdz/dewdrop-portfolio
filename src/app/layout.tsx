@@ -15,7 +15,10 @@ const geistMono = Geist_Mono({ //used in special boxes or stylistic accents - fi
 });
 
 export const metadata: Metadata = { // sets the title in browser tab
-  title: "DewDrop Studio",
+  title: {
+    default: "DewDrop Studios",
+    template: "DewDrop Studios | %s"
+  },
   description: "Pole dance performances and portfolio",
 };
 

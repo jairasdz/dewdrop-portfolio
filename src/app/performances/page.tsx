@@ -36,8 +36,8 @@ export default function Performances() {
                     <PerformanceCard title="The Twilight Benefit Show" date="January 8, 2026" image="images/twilight-benefit-show.JPG"/>
                     <PerformanceCard title="The SlutCracker" date="December 4, 2025" image="images/slutcracker.JPG"/>
                     <PerformanceCard title="CUNTRY Night" date="November 6, 2025" image="images/cuntry-night.JPG"/>
-                    <PerformanceCard title="OOPS! All Villains" date="October 2, 2025" image="images/oops-all-villains.JPG"/>
-                    <PerformanceCard title="Night Of Enchantment" date="August 8, 2025" image="images/night-of-enchantment.PNG"/>
+                    <PerformanceCard title="OOPS! All Villains" date="October 2, 2025" image="https://res.cloudinary.com/df5d8rhg2/image/upload/v1773697789/oops-all-villains_qowgyq.jpg"/>
+                    <PerformanceCard title="Night Of Enchantment" date="August 8, 2025" image="https://res.cloudinary.com/df5d8rhg2/image/upload/v1773697789/night-of-enchantment_s82awy.png"/>
                         {/* <PerformanceCard title="Raven Studios 5th Year Anniversary Student Showcase" date="June 28, 2025"/> */}
                 </div>                
             </section>

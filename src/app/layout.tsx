@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Pacifico } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/Navbar";
 
@@ -14,6 +14,11 @@ const geistMono = Geist_Mono({ //used in special boxes or stylistic accents - fi
   subsets: ["latin"],
 });
 
+const pacifico = Pacifico({
+  subsets: ['latin'],
+  weight: '400'
+})
+
 export const metadata: Metadata = { // sets the title in browser tab
   title: {
     default: "DewDrop Studios",
@@ -27,6 +32,7 @@ export default function RootLayout({ children}: Readonly < { children: React.Rea
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // className={`${pacifico.className} antialiased`}
       >
         <NavBar />
         {children} {/* everything below the NavBar changes per page */}

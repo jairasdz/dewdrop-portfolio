@@ -13,7 +13,6 @@ export default function PerformanceCard({ title, date, image }: PerformanceCardP
                 src={image}
                 alt={title}
                 loading="lazy"
-                className=""
             />
 
             {/* <div className="absolute top-0 w-full bg-slate backdrop-blur-sm p-3">

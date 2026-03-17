@@ -1,6 +1,7 @@
 import PerformanceCard from "../components/PerformanceCard";
 import { performances } from "@/lib/performances"
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = { // sets the title in browser tab
     title: "Performances",
@@ -24,12 +25,14 @@ export default function Performances() {
                 </h3>  
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                     {/* {upcoming performance cards go here } */}
-                    {upcomingShows.map((perf, i) => (
-                        <PerformanceCard 
-                            key={i} 
-                            title={perf.title} 
-                            date={perf.date} 
-                            image={perf.poster}/>
+                    {upcomingShows.map((perf) => (
+                        <Link key={perf.slug} href={`/performances/${perf.slug}`}>
+                            <PerformanceCard 
+                                title={perf.title} 
+                                date={perf.date} 
+                                image={perf.poster}
+                            />
+                        </Link>
                     ))}
 
                 </div>               
@@ -40,13 +43,14 @@ export default function Performances() {
                 </h2> 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                     {/* {past performance cards go here } */}
-                    {pastShows.map((perf, i) => (
-                        <PerformanceCard
-                            key={i}
-                            title={perf.title}
-                            date={perf.date}
-                            image={perf.poster}
-                        />
+                    {pastShows.map((perf) => (
+                        <Link key={perf.slug} href={`/performances/${perf.slug}`}>
+                            <PerformanceCard 
+                                title={perf.title} 
+                                date={perf.date} 
+                                image={perf.poster}
+                            />
+                        </Link>
                     ))}
                 </div>                
             </section>

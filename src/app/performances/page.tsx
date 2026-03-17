@@ -26,13 +26,12 @@ export default function Performances() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                     {/* {upcoming performance cards go here } */}
                     {upcomingShows.map((perf) => (
-                        <Link key={perf.slug} href={`/performances/${perf.slug}`}>
-                            <PerformanceCard 
-                                title={perf.title} 
-                                date={perf.date} 
-                                image={perf.poster}
-                            />
-                        </Link>
+                        <PerformanceCard
+                            key={perf.slug}
+                            title={perf.title} 
+                            date={perf.date} 
+                            image={perf.poster}
+                        />
                     ))}
 
                 </div>               

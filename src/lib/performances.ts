@@ -148,7 +148,7 @@ export const performances = [
                 tags: ["group"]
             },
             {
-                src: "https://ik.imagekit.io/dewypole/twilight-benefit-show/IMG_0775.MOV/ik-video.mp4",
+                src: "https://ik.imagekit.io/dewypole/twilight-benefit-show/IMG_0775.MOV/ik-video.mp4", // limit
                 type: "video",
                 tags: ["highlight"]
             },
@@ -158,7 +158,7 @@ export const performances = [
                 tags: ["highlight"]
             },
             {
-                src: "https://ik.imagekit.io/dewypole/twilight-benefit-show/4c88f10cac4141b6818560f05f5b3764.mov",
+                src: "https://ik.imagekit.io/dewypole/twilight-benefit-show/4c88f10cac4141b6818560f05f5b3764.mov", // limit
                 type: "video",
                 tags: ["highlight"]
             },
@@ -207,7 +207,7 @@ export const performances = [
                 tags: ["group", "trio"]
             },
             {
-                src: "https://ik.imagekit.io/dewypole/the-slutcracker/IMG_9693.MOV/ik-video.mp4",
+                src: "https://ik.imagekit.io/dewypole/the-slutcracker/IMG_9693.MOV/ik-video.mp4", //liit
                 type: "video",
                 tags: ["highlight"]
             },
@@ -635,12 +635,43 @@ export const performances = [
             },
         ]
     },
-    // {
-    //     slug: "ravens-5th-showcase",
-    //     title: "Raven Studios 5th Year Anniversary Student Showcase",
-    //     date: "June 28, 2025",
-    //     category: "past",
-    //     poster: "https://res.cloudinary.com/df5d8rhg2/image/upload/v1773697789/night-of-enchantment_s82awy.png",
-    //     media: []
-    // },
+    {
+        slug: "ravens-5th-showcase",
+        title: "Raven Studios 5th Year Anniversary Student Showcase",
+        date: "June 28, 2025",
+        category: "past",
+        poster: "https://ik.imagekit.io/dewypole/ravens-5th-anniversary/IMG_0343.HEIC",
+        media: [
+            {
+                src: "https://ik.imagekit.io/dewypole/ravens-5th-anniversary/IMG_0343.HEIC",
+                type: "image",
+                tags: ["group"]
+            },
+            {
+                src: "https://ik.imagekit.io/dewypole/ravens-5th-anniversary/E84A1897.jpg",
+                type: "image",
+                tags: ["group"]
+            },
+            {
+                src: "https://ik.imagekit.io/dewypole/ravens-5th-anniversary/E84A1380.jpg",
+                type: "image",
+                tags: ["group"]
+            },
+            {
+                src: "https://ik.imagekit.io/dewypole/ravens-5th-anniversary/E84A1670.jpg",
+                type: "image",
+                tags: ["individual"]
+            },
+            {
+                src: "https://ik.imagekit.io/dewypole/ravens-5th-anniversary/E84A1677.jpg",
+                type: "image",
+                tags: ["individual"]
+            },
+            {
+                src: "https://ik.imagekit.io/dewypole/ravens-5th-anniversary/E84A1897.jpg",
+                type: "image",
+                tags: ["individual"]
+            },
+        ]
+    },
 ]

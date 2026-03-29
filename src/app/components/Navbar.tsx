@@ -3,7 +3,8 @@ import Link from "next/link";
 const navLinks = [
     { href: '/about', label: 'About Me' },
     { href: '/performances', label: 'Performances' },
-    { href: '/gallery', label: 'Gallery' }
+    { href: '/gallery', label: 'Gallery' },
+    { href: '/photoshoot', label: 'Photoshoots'}
 ];
 
 export default function NavBar() {

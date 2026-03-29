@@ -1,9 +1,14 @@
 import PerformanceCard from "../components/PerformanceCard";
+import { performances } from "@/lib/performances"
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = { // sets the title in browser tab
     title: "Performances",
   };
+
+const upcomingShows = performances.filter(p => p.category === "upcoming");
+const pastShows = performances.filter(p => p.category === "past");
 
 export default function Performances() {
     return (
@@ -19,12 +24,15 @@ export default function Performances() {
                     (NOTE: All upcoming shows are TBD due to venue issues)
                 </h3>  
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-                    {/* {cards go here } */}
-                    <PerformanceCard title="LOVE IS EVOL" date="TBD" image="images/love-is-evol.JPG"/>
-                    <PerformanceCard title="Gaga for Gaga" date="TBD" image="images/gaga-for-gaga.JPG"/>
-                    <PerformanceCard title="Cabaret Meets Broadway" date="TBD" image="images/broadway-cabaret-night.JPG"/>
-                    <PerformanceCard title="Revenge of the Nerdlesque" date="TBD" image="images/nerdlesque.JPG"/>
-                    <PerformanceCard title="Enchanted Ravens Pride" date="TBD" image="images/er-pride.JPG"/>
+                    {/* {upcoming performance cards go here } */}
+                    {upcomingShows.map((perf) => (
+                        <PerformanceCard
+                            key={perf.slug}
+                            title={perf.title} 
+                            date={perf.date} 
+                            image={perf.poster}
+                        />
+                    ))}
 
                 </div>               
             </section>
@@ -33,12 +41,16 @@ export default function Performances() {
                         Past Shows
                 </h2> 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <PerformanceCard title="The Twilight Benefit Show" date="January 8, 2026" image="images/twilight-benefit-show.JPG"/>
-                    <PerformanceCard title="The SlutCracker" date="December 4, 2025" image="images/slutcracker.JPG"/>
-                    <PerformanceCard title="CUNTRY Night" date="November 6, 2025" image="images/cuntry-night.JPG"/>
-                    <PerformanceCard title="OOPS! All Villains" date="October 2, 2025" image="images/oops-all-villains.JPG"/>
-                    <PerformanceCard title="Night Of Enchantment" date="August 8, 2025" image="images/night-of-enchantment.PNG"/>
-                        {/* <PerformanceCard title="Raven Studios 5th Year Anniversary Student Showcase" date="June 28, 2025"/> */}
+                    {/* {past performance cards go here } */}
+                    {pastShows.map((perf) => (
+                        <Link key={perf.slug} href={`/performances/${perf.slug}`}>
+                            <PerformanceCard 
+                                title={perf.title} 
+                                date={perf.date} 
+                                image={perf.poster}
+                            />
+                        </Link>
+                    ))}
                 </div>                
             </section>
         </main>
